@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Apr 2026 11:31:06 at https://glasspollart.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://glasspollart.com/ -O1 "C:\Users\DELL\Desktop\test4" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:37:14	Error: 	"Bad Request" (400) at link https://glasspollart.com/product-category/{{banner_img}} (from https://glasspollart.com/product-category/durga-idols)
+11:37:14	Error: 	"Bad Request" (400) at link https://glasspollart.com/product-category/{{item.details_url}} (from https://glasspollart.com/product-category/durga-idols)
+11:37:14	Error: 	"Bad Request" (400) at link https://glasspollart.com/product-category/{{item.product_details_link}} (from https://glasspollart.com/product-category/durga-idols)
+11:43:12	Error: 	"Bad Request" (400) at link https://glasspollart.com/products/{{item.details_url}} (from https://glasspollart.com/products/fiberglass-durga-idol-1)
+11:43:12	Error: 	"Unknown error" (429) at link https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_(2017).svg/300px-YouTube_social_white_circle_(2017).svg.png?20220808215513 (from https://glasspollart.com/products/fiberglass-durga-idol-1)
+11:43:12	Error: 	"Bad Request" (400) at link https://glasspollart.com/products/{{cat.details_url}} (from https://glasspollart.com/products/fiberglass-durga-idol-1)
+11:43:12	Error: 	"Bad Request" (400) at link https://glasspollart.com/products/{{tg.details_url}} (from https://glasspollart.com/products/fiberglass-durga-idol-1)
+
+HTTrack Website Copier/3.49-2 mirror complete in 12 minutes 8 seconds : 1718 links scanned, 1710 files written (480460237 bytes overall) [456621225 bytes received at 627226 bytes/sec], 30033302 bytes transferred using HTTP compression in 474 files, ratio 18%, 19.0 requests per connection
+(7 errors, 0 warnings, 0 messages)

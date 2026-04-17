@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.google.com	TRUE	/	FALSE	1999999999	__Secure-BUCKET	CPsD
+translate.google.com	TRUE	/	FALSE	1999999999	SameSite	lax
+glasspollart.com	TRUE	/	FALSE	1999999999	ci_session	0b72d39b5d192daa33f93928c77a5bd68f8c9a7a
+
