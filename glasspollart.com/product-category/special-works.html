@@ -82,18 +82,18 @@
     
     <!--modernizr min js here-->
     <script src="../assets/frontend_template/js/vendor/modernizr-3.7.1.min.js"></script>
-    
+                                              
     
     <!-- GetButton.io widget -->
 <script type="text/javascript">
 (function () {
 var options = {
-facebook: "336252406847320", // Facebook page ID
-whatsapp: "+919831583007", // WhatsApp number
-call_to_action: "Chat", // Call to action
-button_color: "#129BF4", // Color of button
-position: "left", // Position may be 'right' or 'left'
-order: "whatsapp,facebook", // Order of buttons
+facebook: "336252406847320", // Facebook page ID or username 
+whatsapp: "+919831583007", // WhatsApp number with country code 
+call_to_action: "Chat", // Call to action 
+button_color: "#129BF4", // Color of button 
+position: "left", // Position may be 'right' or 'left' 
+order: "whatsapp,facebook", // Order of buttons 
 };
 var proto = 'special-works.html', host = "getbutton.io", url = proto + '//static.' + host;
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -420,62 +420,162 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <div class="shop_area shop_fullwidth mb-60">
     <div class="container">
         <!--shop wrapper start-->
-        <div class="row shop_wrapper  grid_4" ng-init="get_data()">
-            <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
+        <div class="row shop_wrapper grid_4">
+            <!-- Static SCULPTURES Product Cards -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
                     <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Decorative Garden Sculpture" title="Fiberglass Decorative Garden Sculpture" src="../assets/upload/product/basic/fiber-garden-sculpture.jpg" style="object-fit:cover;width:100%;height:180px;" />
                         </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
                         <div class="action_links">
                             <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Decorative Garden Sculpture</a>
+                        </h4>
                         <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
+                            <span class="current_price">₹ 600</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Marathon man Sculpture" title="Fiberglass Marathon man Sculpture" src="../assets/upload/product/basic/GLASSFIBER.png" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Marathon man Sculpture</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 235600</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="shop_toolbar t_bottom">
-            <div class="pagination">
-                <ul class="paginationul" ng-show="listData.length != 0" uib-pagination total-items="listData.length" ng-model="currentPage" max-size="maxSize" boundary-links="true" boundary-link-numbers="true" force-ellipses="true" items-per-page="itemPage" first-text="First" last-text="Last" next-text="Next" previous-text="Prev">
-                </ul>
-                <!--<ul>
-                    <li class="current">1</li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li class="next"><a href="#">next</a></li>
-                    <li><a href="#">>></a></li>
-                </ul>-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Ashoka Pillar Sculpture" title="Fiberglass Ashoka Pillar Sculpture" src="../assets/upload/product/basic/GLASSFIBER.png" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Ashoka Pillar Sculpture</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 164500</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--shop toolbar end-->
-
-        <div class="category_desc"> 
-            <h3>{{cat_title}}</h3>
-            <div ng-bind-html="cat_description|trusted"></div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="fiberglass nutcracker statue" title="fiberglass nutcracker statue" src="../assets/upload/product/basic/Fiber-The-Nutcracker-King.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Nutcracker Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 3500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Decorative Nutcracker Figure" title="Decorative Nutcracker Figure" src="../assets/upload/product/basic/GLASSFIBER.png" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Decorative Nutcracker Figure</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 5000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Nutcracker Sculpture" title="Fiberglass Nutcracker Sculpture" src="../assets/upload/product/basic/GLASSFIBER.png" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Nutcracker Sculpture</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 2805</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiber Nutcracker Soldier Statue" title="Fiber Nutcracker Soldier Statue" src="../assets/upload/product/basic/GLASSFIBER.png" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiber Nutcracker Soldier Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 3500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--shop wrapper end-->
     </div>
@@ -592,7 +692,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
             </div>     
         </div>  
     </div>    
-</footer><!--end footer section-->
+</footer><!--end footer section--> 
 
 <!-- JS
 ============================================ -->
@@ -711,10 +811,10 @@ app.controller("listCtrl", function($scope, $http, $timeout, serverdataFactory){
 
 
   /*$scope.$watchGroup(['category','sub_category'], function(newValue, oldValue, scope){
-    if(newValue != oldValue){
+    if(newValue != oldValue){ 
       if ($scope.category) {
         $scope.cat = $scope.category;  
-        $scope.sub_cat = 'no value';  
+        $scope.sub_cat = 'no value';   
         $scope.sub_category = null;  
       }
       if ($scope.sub_category) {
@@ -918,3 +1018,5 @@ $(function(){
 
 <!-- Mirrored from glasspollart.com/product-category/special-works by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 06:02:45 GMT -->
 </html>
+
+

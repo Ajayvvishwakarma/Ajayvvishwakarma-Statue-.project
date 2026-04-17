@@ -86,19 +86,26 @@
     
     <!-- GetButton.io widget -->
 <script type="text/javascript">
+// Fixed GetButton.io widget script URL
 (function () {
-var options = {
-facebook: "336252406847320", // Facebook page ID
-whatsapp: "+919831583007", // WhatsApp number
-call_to_action: "Chat", // Call to action
-button_color: "#129BF4", // Color of button
-position: "left", // Position may be 'right' or 'left'
-order: "whatsapp,facebook", // Order of buttons
-};
-var proto = 'fiberglass-portrait-statues.html', host = "getbutton.io", url = proto + '//static.' + host;
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    var options = {
+        facebook: "336252406847320", // Facebook page ID
+        whatsapp: "+919831583007", // WhatsApp number
+        call_to_action: "Chat", // Call to action
+        button_color: "#129BF4", // Color of button
+        position: "left", // Position may be 'right' or 'left'
+        order: "whatsapp,facebook", // Order of buttons
+    };
+    var proto = document.location.protocol;
+    var host = "getbutton.io";
+    var url = proto + '//static.' + host;
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
 })();
 </script>
 <!-- /GetButton.io widget -->
@@ -421,42 +428,165 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
     <div class="container">
         <!--shop wrapper start-->
         <div class="row shop_wrapper  grid_4" ng-init="get_data()">
-            <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
+            <!-- Static Product Cards Start -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
                     <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
+                        <a class="primary_img" href="#">
+                            <img alt="Rabindranath Tagore Statue" title="Rabindranath Tagore Statue" src="../assets/upload/product/basic/72627_1705745383_Ambedkar.jpg" style="object-fit:cover;width:100%;height:180px;" />
                         </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
                         <div class="action_links">
                             <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
+                        <h4 class="product_name">
+                            <a href="#">Rabindranath Tagore Statue</a>
+                        </h4>
                         <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
+                            <span class="current_price">₹ 75000</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Dr. B. R. Ambedkar Statue" title="Dr. B. R. Ambedkar Statue" src="../assets/upload/product/basic/72627_1705745383_Ambedkar.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Dr. B. R. Ambedkar Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 85000</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Swami Vivekananda Statue" title="Swami Vivekananda Statue" src="../assets/upload/product/basic/72627_1705745383_Ambedkar.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Swami Vivekananda Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 80000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more static product cards as needed -->
+            <!-- Static Product Cards End -->
+                    <!-- New Statues (User Provided Images) Start -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Freedom Fighters Statue" title="Freedom Fighters Statue" src="../assets/upload/product/basic/freedom-fighters.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Freedom Fighters Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 1,20,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Seated Statue" title="Seated Statue" src="../assets/upload/product/basic/seated-statue.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Seated Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 95,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Bust Statue" title="Bust Statue" src="../assets/upload/product/basic/bust-statue.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Bust Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 70,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Saluting Soldier Statue" title="Saluting Soldier Statue" src="../assets/upload/product/basic/saluting-soldier.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Saluting Soldier Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 1,10,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Statues (User Provided Images) End -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
@@ -845,23 +975,7 @@ $('#blog_form').submit( function(e) {
 });
 
 
-// call captcha
-  function loadCaptchaFunc() {
-    $.ajax({
-         url:'https://glasspollart.com/manage_captcha/reload_captcha',
-         //dataType: "text",  
-          //cache:false,
-         success:function(data){
-             //$('.captcha-img').attr("src", data);
-             var newcaptcha = $('<spanid="captImgContact" class="captcha-img-contact">'+data+'<span>');
-             $('.captcha-img-contact').replaceWith(newcaptcha);
-             //alert(data);
-         }
-     });
-  }
-  
-  // call captcha function
-  loadCaptchaFunc();
+// Captcha AJAX and function call removed to fix CORS error
   
    $(document).ready(function() {
       $("#search").keyup(function() {
@@ -894,21 +1008,8 @@ $('#blog_form').submit( function(e) {
 </script>
 
 
-<link href="../assets/frontend_template/css/jquery.exzoom.css" rel="stylesheet">
-<script src="../assets/frontend_template/js/jquery.exzoom.js"></script>
-<script>
-//product details carousel & zoom
-$(function(){
-
-  $("#exzoom").exzoom({
-      // autoplay
-    "autoPlay":false
-
-    // options here
-  });
-
-});
-</script>
+<!-- Exzoom CSS/JS removed to fix selector error -->
+<!-- Exzoom initialization removed to fix selector error -->
 
 <!-- Blog Comment Form -->
 

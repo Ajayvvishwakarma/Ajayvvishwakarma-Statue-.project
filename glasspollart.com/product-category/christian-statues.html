@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<!-- Mirrored from glasspollart.com/product-category/christian-statues by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 06:02:48 GMT -->
+<!-- Mirrored from glasspollart.com/product-category/christian-statues by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 06:02:49 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
@@ -431,7 +431,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 
          </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
                 <div class="single_product">
                     <div class="product_thumb">
                         <a class="primary_img" href="%7b%7bitem-2.html">
@@ -454,6 +454,87 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     </div>
                 </div>
             </div>
+                <!-- Extra Static Christian Statues Products -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/b8d01987cac9f22e4c9f6a8428b87211.jpg" alt="St. Joseph with Child Statue" title="St. Joseph with Child Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Joseph with Child Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/ganesh-statue.jpg" alt="St. Anthony Statue" title="St. Anthony Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Anthony Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 3900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/98a7664b-2b75-4d51-89cd-9e9d4aa4e1e7.jpg" alt="St. Francis Xavier Statue" title="St. Francis Xavier Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Francis Xavier Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/Fiberglass-Antique-Ganesha-Statue-18.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Peter Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
             <p  style="color:red; text-align:center;"> No Data Found !</p>
             </div>
@@ -804,7 +885,6 @@ $('#blog_form').submit( function(e) {
     success: function(response){
       console.log(response);
       document.getElementById("blogsubmit").innerHTML = "SUBMIT";
-      loadCaptchaFunc();
       if(response.success == true)
       {
           $("#asmsg").show();
@@ -845,23 +925,6 @@ $('#blog_form').submit( function(e) {
 });
 
 
-// call captcha
-  function loadCaptchaFunc() {
-    $.ajax({
-         url:'https://glasspollart.com/manage_captcha/reload_captcha',
-         //dataType: "text",  
-          //cache:false,
-         success:function(data){
-             //$('.captcha-img').attr("src", data);
-             var newcaptcha = $('<spanid="captImgContact" class="captcha-img-contact">'+data+'<span>');
-             $('.captcha-img-contact').replaceWith(newcaptcha);
-             //alert(data);
-         }
-     });
-  }
-  
-  // call captcha function
-  loadCaptchaFunc();
   
    $(document).ready(function() {
       $("#search").keyup(function() {
