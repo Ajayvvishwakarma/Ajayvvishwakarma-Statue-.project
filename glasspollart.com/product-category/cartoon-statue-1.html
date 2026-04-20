@@ -421,42 +421,186 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
     <div class="container">
         <!--shop wrapper start-->
         <div class="row shop_wrapper  grid_4" ng-init="get_data()">
-            <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
+            <!-- Static Cartoon Product Cards Start -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
                     <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
+                        <a class="primary_img" href="#">
+                            <img alt="Mickey Mouse Statue" title="Mickey Mouse Statue" src="../assets/upload/product/basic/to.jpg" style="object-fit:cover;width:100%;height:180px;" />
                         </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
                         <div class="action_links">
                             <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
+                        <h4 class="product_name">
+                            <a href="#">Mickey Mouse Statue</a>
+                        </h4>
                         <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
+                            <span class="current_price">₹ 18000</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Donald Duck Statue" title="Donald Duck Statue" src="../assets/upload/product/basic/to1.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Donald Duck Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 17500</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Chhota Bheem Statue" title="Chhota Bheem Statue" src="../assets/upload/product/basic/to2.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Chhota Bheem Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 16000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Doraemon Statue" title="Doraemon Statue" src="../assets/upload/product/basic/to3.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Doraemon Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 17000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Static Cartoon Product Cards End -->
+                    <!-- Extra Cartoon Product Cards Start -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Tom and Jerry Statue" title="Tom and Jerry Statue" src="../assets/upload/product/basic/to4.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Tom and Jerry Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 18500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Shinchan Statue" title="Shinchan Statue" src="../assets/upload/product/basic/to5.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Shinchan Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 16500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Minion Statue" title="Minion Statue" src="../assets/upload/product/basic/to6.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Minion Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 15500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="single_product border rounded p-0">
+                            <div class="product_thumb">
+                                <a class="primary_img" href="#">
+                                    <img alt="Pokemon Pikachu Statue" title="Pokemon Pikachu Statue" src="../assets/upload/product/basic/to7.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                                </a>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product_content grid_content">
+                                <h4 class="product_name">
+                                    <a href="#">Pokemon Pikachu Statue</a>
+                                </h4>
+                                <div class="price_box">
+                                    <span class="current_price">₹ 15000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extra Cartoon Product Cards End -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">

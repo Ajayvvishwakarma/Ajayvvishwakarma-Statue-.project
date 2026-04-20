@@ -422,14 +422,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
         <!--shop wrapper start-->
         <div class="row shop_wrapper  grid_4" ng-init="get_data()">
             <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
+                <!-- Removed Angular dynamic loading spinner for static site -->
 
             <!-- Static Wild Animal Statues Product Cards -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
@@ -652,9 +645,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
-            </div>
+            <!-- Removed Angular dynamic 'No Data Found!' message for static site -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">

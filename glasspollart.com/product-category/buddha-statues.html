@@ -421,42 +421,207 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
     <div class="container">
         <!--shop wrapper start-->
         <div class="row shop_wrapper  grid_4" ng-init="get_data()">
-            <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
+            <!-- User Provided Buddha Product Cards Start -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
                     <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Buddha Sculpture" title="Fiberglass Buddha Sculpture" src="../assets/upload/product/basic/as.jpg" style="object-fit:cover;width:100%;height:180px;" />
                         </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
                         <div class="action_links">
                             <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Buddha Sculpture</a>
+                        </h4>
                         <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
+                            <span class="current_price">₹ 45000</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Buddha Statues" title="Fiberglass Buddha Statues" src="../assets/upload/product/basic/as1.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Buddha Statues</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 55000</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Earth Touching Buddha Statue" title="Fiberglass Earth Touching Buddha Statue" src="../assets/upload/product/basic/as2.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Earth Touching Buddha Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 45000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiber Blessing Buddha Statue" title="Fiber Blessing Buddha Statue" src="../assets/upload/product/basic/as3.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiber Blessing Buddha Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 45000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Gandhara Buddha" title="Fiberglass Gandhara Buddha" src="../assets/upload/product/basic/as4.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Gandhara Buddha</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 50000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Buddha Statue" title="Fiberglass Buddha Statue" src="../assets/upload/product/basic/as5.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Buddha Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 35000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Fiberglass Buddha Statues" title="Fiberglass Buddha Statues" src="../assets/upload/product/basic/as6.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Fiberglass Buddha Statues</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 50000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Buddha Statue" title="Buddha Statue" src="../assets/upload/product/basic/as7.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Buddha Statue</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 90000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="single_product border rounded p-0">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img alt="Buddha Statue Loves Peacock" title="Buddha Statue Loves Peacock" src="../assets/upload/product/basic/as8.jpg" style="object-fit:cover;width:100%;height:180px;" />
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name">
+                            <a href="#">Buddha Statue Loves Peacock</a>
+                        </h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 50000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- User Provided Buddha Product Cards End -->
+            <!-- All static product cards are now shown above. All dynamic Angular code and 'No Data Found!' message removed. -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
@@ -604,42 +769,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <script src="../assets/frontend_template/js/bootstrap.min.js"></script>
 <!--owl carousel min js-->
 <script src="../assets/frontend_template/js/owl.carousel.min.js"></script>
-<!--slick min js-->
-<script src="../assets/frontend_template/js/slick.min.js"></script>
-<!--magnific popup min js-->
-<script src="../assets/frontend_template/js/jquery.magnific-popup.min.js"></script>
-<!--counterup min js-->
-<script src="../assets/frontend_template/js/jquery.counterup.min.js"></script>
-<!--jquery countdown min js-->
-<script src="../assets/frontend_template/js/jquery.countdown.js"></script>
-<!--jquery ui min js-->
-<script src="../assets/frontend_template/js/jquery.ui.js"></script>
-<!--jquery elevatezoom min js-->
-<script src="../assets/frontend_template/js/jquery.elevatezoom.js"></script>
-<!--isotope packaged min js-->
-<script src="../assets/frontend_template/js/isotope.pkgd.min.js"></script>
-<!--slinky menu js-->
-<script src="../assets/frontend_template/js/slinky.menu.js"></script>
-<!-- Plugins JS -->
-<script src="../assets/frontend_template/js/plugins.js"></script>
-<!-- Main JS -->
-<script src="../assets/frontend_template/js/main.js"></script>
-<script src="../assets/frontend_template/js/easy-responsive-tabs.js"></script>
-
-<!-- Ekko Lightbox JS -->
-<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
-<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-<script type="text/javascript">
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-</script>
-<!-- Ekko Lightbox JS End -->
-
-<script>
+            <!-- All static product cards are now shown above. Dynamic Angular code and 'No Data Found!' message removed. -->
     $(document).ready(function () {
         $('#horizontalTab').easyResponsiveTabs({
         type: 'default', //Types: default, vertical, accordion           

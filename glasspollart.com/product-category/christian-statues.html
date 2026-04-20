@@ -422,44 +422,13 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
         <!--shop wrapper start-->
         <div class="row shop_wrapper  grid_4" ng-init="get_data()">
             <!---->
-        <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
-            <div class="spinner">
-  <div class="bounce1"></div>
-  <div class="bounce2"></div>
-  <div class="bounce3"></div>
-</div>
-
-         </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
-                    <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
-                        </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
-                        <div class="action_links">
-                            <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
-                        <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Removed Angular dynamic loading spinner, product loop, and 'No Data Found!' message for static site -->
                 <!-- Extra Static Christian Statues Products -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img" href="#">
-                                <img src="../assets/upload/product/basic/b8d01987cac9f22e4c9f6a8428b87211.jpg" alt="St. Joseph with Child Statue" title="St. Joseph with Child Statue">
+                                <img src="../assets/upload/product/basic/test.jpg" alt="St. Joseph with Child Statue" title="St. Joseph with Child Statue">
                             </a>
                             <div class="action_links">
                                 <ul>
@@ -479,7 +448,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img" href="#">
-                                <img src="../assets/upload/product/basic/ganesh-statue.jpg" alt="St. Anthony Statue" title="St. Anthony Statue">
+                                <img src="../assets/upload/product/basic/test1.jpg" alt="St. Anthony Statue" title="St. Anthony Statue">
                             </a>
                             <div class="action_links">
                                 <ul>
@@ -499,7 +468,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img" href="#">
-                                <img src="../assets/upload/product/basic/98a7664b-2b75-4d51-89cd-9e9d4aa4e1e7.jpg" alt="St. Francis Xavier Statue" title="St. Francis Xavier Statue">
+                                <img src="../assets/upload/product/basic/test2.jpg" alt="St. Francis Xavier Statue" title="St. Francis Xavier Statue">
                             </a>
                             <div class="action_links">
                                 <ul>
@@ -519,7 +488,87 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     <div class="single_product">
                         <div class="product_thumb">
                             <a class="primary_img" href="#">
-                                <img src="../assets/upload/product/basic/Fiberglass-Antique-Ganesha-Statue-18.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                                <img src="../assets/upload/product/basic/test7.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Peter Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/test6.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Peter Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/test5.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Peter Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/test3.jpg" alt="St. Peter Statue" title="St. Peter Statue">
+                            </a>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product_content grid_content">
+                            <h4 class="product_name"><a href="#">St. Peter Statue</a></h4>
+                            <div class="price_box">
+                                <span class="current_price">₹ 4300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="single_product">
+                        <div class="product_thumb">
+                            <a class="primary_img" href="#">
+                                <img src="../assets/upload/product/basic/test4.jpg" alt="St. Peter Statue" title="St. Peter Statue">
                             </a>
                             <div class="action_links">
                                 <ul>
@@ -536,13 +585,12 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     </div>
                 </div>
             <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
+            <!-- Removed Angular dynamic 'No Data Found!' message for static site -->
             </div>
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
-                <ul class="paginationul" ng-show="listData.length != 0" uib-pagination total-items="listData.length" ng-model="currentPage" max-size="maxSize" boundary-links="true" boundary-link-numbers="true" force-ellipses="true" items-per-page="itemPage" first-text="First" last-text="Last" next-text="Next" previous-text="Prev">
-                </ul>
+                <!-- Removed Angular dynamic pagination for static site -->
                 <!--<ul>
                     <li class="current">1</li>
                     <li><a href="#">2</a></li>
