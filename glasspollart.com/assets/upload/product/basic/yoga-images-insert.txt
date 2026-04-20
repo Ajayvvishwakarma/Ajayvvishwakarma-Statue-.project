@@ -1,0 +1,11 @@
+[Image 1: Sarvangasana Shoulder Stand Yoga Statue]
+
+<img src="../assets/upload/product/basic/shoulder-stand-yoga.jpg" alt="Sarvangasana Shoulder Stand Yoga Statue" title="Sarvangasana Shoulder Stand Yoga Statue" style="width:100%;height:auto;">
+
+[Image 2: Trikonasana Yoga Statue]
+
+<img src="../assets/upload/product/basic/trikonasana-yoga.jpg" alt="Trikonasana Yoga Statue" title="Trikonasana Yoga Statue" style="width:100%;height:auto;">
+
+[Image 3: Seated Yoga Statue]
+
+<img src="../assets/upload/product/basic/seated-statue.jpg" alt="Seated Yoga Statue" title="Seated Yoga Statue" style="width:100%;height:auto;">
