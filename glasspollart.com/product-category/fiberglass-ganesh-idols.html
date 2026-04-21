@@ -396,18 +396,18 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 </header><!--end header section-->
 
 <!--Body Content-->
-<style></style><main class="ng-cloak" ng-app="listApp"  ng-controller="listCtrl" >
+<style></style><main>
 <!--breadcrumbs area start-->
 <div class="breadcrumbs_area" style="background:url(%7b%7bbanner_img%7d%7d.html)">
     <div class="container">   
         <div class="row">
             <div class="col-12">
                 <div class="breadcrumb_content">
-                    <h3>{{cat_title}}</h3>
-                    <ul ng-init="get_parentcatList_data()">
+                    <h3>Fiberglass Ganesh Idols</h3>
+                    <ul>
                         <li><a href="../index.html">home</a></li>
-                        <li ng-repeat="item in parentcatList"><a href="%7b%7bitem.html">{{item.cat_title}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{cat_title}}</li>
+                        <!-- Removed dynamic parentcatList -->
+                        <li class="breadcrumb-item active" aria-current="page">Fiberglass Ganesh Idols</li>
                     </ul>
                 </div>
             </div>
@@ -420,7 +420,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <div class="shop_area shop_fullwidth mb-60">
     <div class="container">
         <!--shop wrapper start-->
-        <div class="row shop_wrapper  grid_4" ng-init="get_data()">
+        <div class="row shop_wrapper  grid_4">
             <!-- Static Ganesh Idols Product Cards -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="single_product">
@@ -605,7 +605,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
-                <ul class="paginationul" ng-show="listData.length != 0" uib-pagination total-items="listData.length" ng-model="currentPage" max-size="maxSize" boundary-links="true" boundary-link-numbers="true" force-ellipses="true" items-per-page="itemPage" first-text="First" last-text="Last" next-text="Next" previous-text="Prev">
+                <!-- Pagination removed: static site -->
                 </ul>
                 <!--<ul>
                     <li class="current">1</li>
@@ -619,8 +619,8 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
         <!--shop toolbar end-->
 
         <div class="category_desc"> 
-            <h3>{{cat_title}}</h3>
-            <div ng-bind-html="cat_description|trusted"></div>
+            <h3>Fiberglass Ganesh Idols</h3>
+            <div>Fiberglass Ganesh Idols<br></div>
         </div>
         <!--shop wrapper end-->
     </div>
