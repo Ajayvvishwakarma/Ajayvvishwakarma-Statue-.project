@@ -427,18 +427,18 @@
 </header><!--end header section-->
 
 <!--Body Content-->
-<style></style><main class="ng-cloak" ng-app="listApp"  ng-controller="listCtrl" >
+<style></style><main>
 <!--breadcrumbs area start-->
-<div class="breadcrumbs_area" style="background:url(%7b%7bbanner_img%7d%7d.html)">
+<div class="breadcrumbs_area" style="background:url('../assets/upload/category_img/e5790b52f4562087ac33be15a4253a8a.jpg')">
     <div class="container">   
         <div class="row">
             <div class="col-12">
                 <div class="breadcrumb_content">
-                    <h3>{{cat_title}}</h3>
-                    <ul ng-init="get_parentcatList_data()">
+                    <h3>GARDEN STATUES</h3>
+                    <ul>
                         <li><a href="../index.html">home</a></li>
-                        <li ng-repeat="item in parentcatList"><a href="%7b%7bitem.html">{{item.cat_title}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{cat_title}}</li>
+                        <!-- Removed dynamic parentcatList -->
+                        <li class="breadcrumb-item active" aria-current="page">GARDEN STATUES</li>
                     </ul>
                 </div>
             </div>
@@ -451,7 +451,7 @@
 <div class="shop_area shop_fullwidth mb-60">
     <div class="container">
         <!--shop wrapper start-->
-        <div class="row shop_wrapper  grid_4" ng-init="get_data()">
+        <div class="row shop_wrapper  grid_4">
             <!-- Static Garden Statues Product Cards (with new products) -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                 <div class="single_product border rounded p-0 h-100">
@@ -619,23 +619,13 @@
             </div>
         </div>
         <div class="shop_toolbar t_bottom">
-            <div class="pagination">
-                <ul class="paginationul" ng-show="listData.length != 0" uib-pagination total-items="listData.length" ng-model="currentPage" max-size="maxSize" boundary-links="true" boundary-link-numbers="true" force-ellipses="true" items-per-page="itemPage" first-text="First" last-text="Last" next-text="Next" previous-text="Prev">
-                </ul>
-                <!--<ul>
-                    <li class="current">1</li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li class="next"><a href="#">next</a></li>
-                    <li><a href="#">>></a></li>
-                </ul>-->
-            </div>
+            <!-- Pagination removed: static site -->
         </div>
         <!--shop toolbar end-->
 
         <div class="category_desc"> 
-            <h3>{{cat_title}}</h3>
-            <div ng-bind-html="cat_description|trusted"></div>
+            <h3>GARDEN STATUES</h3>
+            <div>We are the Manufacturer and Exporter of Fiberglass garden statues, garden sculpture, garden sculptures.<br></div>
         </div>
         <!--shop wrapper end-->
     </div>
@@ -743,105 +733,6 @@
                 </div>
             </div>
         </div>
-        <div class="footer_bottom text-center"> 
-            <div class="footer_logo">
-               <a href="#"><img src="../assets/frontend_template/img/footer-pay.png" alt="glasspoll art payment"></a>
-            </div>
-            <div class="copyright_area">
-                <p>Copyright © 2020 Glasspoll Art | All rights reserved</p>
-            </div>     
-        </div>  
-    </div>    
-</footer><!--end footer section-->
-
-<!-- JS
-============================================ -->
-<!--jquery min js-->
-<script src="../assets/frontend_template/js/vendor/jquery-3.4.1.min.js"></script>
-<!--popper min js-->
-<script src="../assets/frontend_template/js/popper.js"></script>
-<!--bootstrap min js-->
-<script src="../assets/frontend_template/js/bootstrap.min.js"></script>
-<!--owl carousel min js-->
-<script src="../assets/frontend_template/js/owl.carousel.min.js"></script>
-<!--slick min js-->
-<script src="../assets/frontend_template/js/slick.min.js"></script>
-<!--magnific popup min js-->
-<script src="../assets/frontend_template/js/jquery.magnific-popup.min.js"></script>
-<!--counterup min js-->
-<script src="../assets/frontend_template/js/jquery.counterup.min.js"></script>
-<!--jquery countdown min js-->
-<script src="../assets/frontend_template/js/jquery.countdown.js"></script>
-<!--jquery ui min js-->
-<script src="../assets/frontend_template/js/jquery.ui.js"></script>
-<!--jquery elevatezoom min js-->
-<script src="../assets/frontend_template/js/jquery.elevatezoom.js"></script>
-<!--isotope packaged min js-->
-<script src="../assets/frontend_template/js/isotope.pkgd.min.js"></script>
-<!--slinky menu js-->
-<script src="../assets/frontend_template/js/slinky.menu.js"></script>
-<!-- Plugins JS -->
-<script src="../assets/frontend_template/js/plugins.js"></script>
-<!-- Main JS -->
-<script src="../assets/frontend_template/js/main.js"></script>
-<script src="../assets/frontend_template/js/easy-responsive-tabs.js"></script>
-
-<!-- Ekko Lightbox JS -->
-<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
-<script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-<script type="text/javascript">
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-</script>
-<!-- Ekko Lightbox JS End -->
-
-<script>
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion           
-        width: 'auto', //auto or any width like 600px
-        fit: true,   // 100% fit in a container
-        closed: 'accordion', // Start closed if in accordion view
-        activate: function(event) { // Callback function if tab is switched
-        var $tab = $(this);
-        var $info = $('#tabInfo');
-        var $name = $('span', $info);
-        $name.text($tab.text());
-        $info.show();
-        }
-        });
-        $('#verticalTab').easyResponsiveTabs({
-        type: 'vertical',
-        width: 'auto',
-        fit: true
-        });
-    });
-</script>
-<!-- google translate script 1-->
-<script type="text/javascript" src="../../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
-
-<!-- Call back function 2 -->
-<!--Google translettaer-->
-<script type="text/javascript">
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<!--product list public view-->
-<script src="../assets/ng/angular.min.js"></script>
-<script src="../assets/ng/sweetalert.min.js"></script>
-<script src="../../cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
-
-<script type="text/javascript">
-let app = angular.module('listApp', ['ui.bootstrap']);
-
-app.controller("listCtrl", function($scope, $http, $timeout, serverdataFactory){
-  
   // pagination
   $scope.currentPage = 1;
   $scope.itemPage = 12;
