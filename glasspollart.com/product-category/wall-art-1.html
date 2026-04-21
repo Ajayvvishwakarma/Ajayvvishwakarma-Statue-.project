@@ -406,8 +406,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     <h3>{{cat_title}}</h3>
                     <ul ng-init="get_parentcatList_data()">
                         <li><a href="../index.html">home</a></li>
-                        <li ng-repeat="item in parentcatList"><a href="%7b%7bitem.html">{{item.cat_title}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{cat_title}}</li>
+                        <li class="breadcrumb-item active" aria-current="page">WALL ART</li>
                     </ul>
                 </div>
             </div>
@@ -420,7 +419,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <div class="shop_area shop_fullwidth mb-60">
     <div class="container">
         <!--shop wrapper start-->
-        <div class="row shop_wrapper  grid_4" ng-init="get_data()">
+        <div class="row shop_wrapper  grid_4">
             <!---->
         <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
             <div class="spinner">
@@ -431,32 +430,109 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 
          </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
+            <!-- Static Wall Art Product Cards -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+                <div class="single_product border rounded p-0 h-100">
                     <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
+                        <a class="primary_img" href="#">
+                            <img src="../assets/upload/product/basic/Chinese-Dragon-Wall-Decor.jpg" alt="Chinese Dragon Wall Decor" title="Chinese Dragon Wall Decor" style="object-fit:cover;width:100%;height:180px;">
                         </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
                         <div class="action_links">
                             <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
+                        <h4 class="product_name"><a href="#">Chinese Dragon Wall Decor</a></h4>
                         <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
+                            <span class="current_price">₹ 3,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+                <div class="single_product border rounded p-0 h-100">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img src="../assets/upload/product/basic/mermaid-wall-hanging-250x250.jpg" alt="Mermaid Wall Hanging" title="Mermaid Wall Hanging" style="object-fit:cover;width:100%;height:180px;">
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name"><a href="#">Mermaid Wall Hanging</a></h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 2,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+                <div class="single_product border rounded p-0 h-100">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img src="../assets/upload/product/basic/lion-face-wall-hanging.jpg" alt="Lion Face Wall Hanging" title="Lion Face Wall Hanging" style="object-fit:cover;width:100%;height:180px;">
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name"><a href="#">Lion Face Wall Hanging</a></h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 2,200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+                <div class="single_product border rounded p-0 h-100">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img src="../assets/upload/product/basic/Lady_stone_Sculpture_Decor_Wall_Hanging.jpg" alt="Lady Stone Sculpture Wall Hanging" title="Lady Stone Sculpture Wall Hanging" style="object-fit:cover;width:100%;height:180px;">
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name"><a href="#">Lady Stone Sculpture Wall Hanging</a></h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 3,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+                <div class="single_product border rounded p-0 h-100">
+                    <div class="product_thumb">
+                        <a class="primary_img" href="#">
+                            <img src="../assets/upload/product/basic/LADY-BACK-WALL-ART.jpg" alt="Lady Back Wall Art" title="Lady Back Wall Art" style="object-fit:cover;width:100%;height:180px;">
+                        </a>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart"><a href="#" title="Enquire Now">Enquire Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content">
+                        <h4 class="product_name"><a href="#">Lady Back Wall Art</a></h4>
+                        <div class="price_box">
+                            <span class="current_price">₹ 2,900</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
-            </div>
+            <!-- No Data Found message removed -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
