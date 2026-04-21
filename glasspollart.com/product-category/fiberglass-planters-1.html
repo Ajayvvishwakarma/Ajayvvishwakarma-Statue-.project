@@ -406,8 +406,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
                     <h3>{{cat_title}}</h3>
                     <ul ng-init="get_parentcatList_data()">
                         <li><a href="../index.html">home</a></li>
-                        <li ng-repeat="item in parentcatList"><a href="%7b%7bitem.html">{{item.cat_title}}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{cat_title}}</li>
+                        <li class="breadcrumb-item active" aria-current="page">FIBERGLASS PLANTERS</li>
                     </ul>
                 </div>
             </div>
@@ -420,7 +419,7 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 <div class="shop_area shop_fullwidth mb-60">
     <div class="container">
         <!--shop wrapper start-->
-        <div class="row shop_wrapper  grid_4" ng-init="get_data()">
+        <div class="row shop_wrapper  grid_4">
             <!---->
         <div class="col-md-12 text-center" style="text-align:center" ng-show="listData.length == 0 && loading">
             <div class="spinner">
@@ -431,32 +430,9 @@ var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s,
 
          </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6" ng-repeat="item in listData | pagination:(currentPage-1)*itemPage | limitTo:itemPage">
-                <div class="single_product">
-                    <div class="product_thumb">
-                        <a class="primary_img" href="%7b%7bitem-2.html">
-                        	<img ng-src="{{item.product_img}}" alt="{{item.image_alt_text}}" title="{{item.image_alt_text}}">
-                        </a>
-                        <div class="label_product">
-                            <!--<span class="label_sale">40% Off Shipping</span>-->
-                        </div>
-                        <div class="action_links">
-                            <ul>
-                                <li class="add_to_cart"><a href="#!" title="Enquire Now">Enquire Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product_content grid_content">
-                        <h4 class="product_name"><a href="%7b%7bitem-2.html">{{item.product_name}}</a></h4>
-                        <div class="price_box">
-                                                        <span class="current_price">₹ {{item.price}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Add static product cards here -->
             <div class="col-md-12 text-center" ng-show="listData.length == 0  && !loading">
-            <p  style="color:red; text-align:center;"> No Data Found !</p>
-            </div>
+            <!-- No Data Found message removed -->
         </div>
         <div class="shop_toolbar t_bottom">
             <div class="pagination">
